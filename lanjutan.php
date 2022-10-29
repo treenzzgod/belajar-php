@@ -105,7 +105,7 @@ echo $pesan;
         if(!empty($_POST['submit'])) {
 
             switch($_POST['nama']) {
-                case "Claudia":
+                case "Gio":
                     $pesan = $_POST['nama']." adalah orang Manado";
                 break;
                 case "Budi":
