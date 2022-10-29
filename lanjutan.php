@@ -106,7 +106,7 @@ echo $pesan;
 
             switch($_POST['nama']) {
                 case "Gio":
-                    $pesan = $_POST['nama']." adalah orang Manado";
+                    $pesan = $_POST['nama']." adalah orang Madagascar";
                 break;
                 case "Budi":
                     $pesan = $_POST['nama']." berasal dari pulau Sumatera";
