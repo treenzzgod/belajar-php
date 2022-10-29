@@ -111,6 +111,9 @@ echo $pesan;
                 case "Budi":
                     $pesan = $_POST['nama']." berasal dari pulau Sumatera";
                 break;
+                case "Ani":
+                    $pesan = $_POST['nama']." berasal dari pulau Sumatera";
+                break;
                 default:
                     $pesan = $_POST['nama']." darimana ya?";
             
