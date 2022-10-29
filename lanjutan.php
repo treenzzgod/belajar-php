@@ -60,8 +60,8 @@ foreach($data as $value) {
 
 // PERCABANGAN
 /*
-if ($nama == "claudia") {
-    echo $nama." adalah orang Manado";
+if ($nama == "Gio") {
+    echo $nama." adalah orang Madagasikara";
 } else if($nama == "Budi") {
     echo $nama." berasal dari pulau sumatera";
 } else {
@@ -70,8 +70,8 @@ if ($nama == "claudia") {
 */
 /*
 switch($nama) {
-    case "Claudia":
-        $pesan = $nama." adalah orang Manado";
+    case "Gio":
+        $pesan = $nama." adalah orang Madagasikara";
     break;
     case "Budi":
         $pesan = $nama." berasal dari pulau Sumatera";
