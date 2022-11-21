@@ -16,12 +16,28 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        button{
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 8px;
+        }
+        button > a{
+            color: white;
+        }
     </style>
+    <h3>Data Jurusan</h3>
+    <button>
+        <a href="tambah_jurusan.php">Tambah Jurusan</a>
+    </button>
     <table>
         <tr>
             <td>ID jurusan</td>
             <td>kode Jurusan</td>
             <td>Nama Jurusan</td>
+            <td colspan="2">Action</td>
         </tr>
         <?php
         include "koneksi.php";
@@ -32,11 +48,17 @@
             echo "<td>" . $jurusan['id_jurusan'] . "</td>";
             echo "<td>" . $jurusan['kode_jurusan'] . "</td>";
             echo "<td>" . $jurusan['nama_jurusan'] . "</td>";
+            echo "<td> <button><a href='edit_jurusan.php?id=" . $jurusan['id_jurusan'] . "'>Edit</a></button> </td>";
+            echo "<td> <button><a href='delete_jurusan.php?id=" . $jurusan['id_jurusan'] . "'>Delete</a></button> </td>";
             echo "</tr>";
         }
         ?>
     </table>
     <br>
+    <h3>Data mahasiswa</h3>
+    <button>
+        <a href="tambah_mahasiswa.php">Tambah Mahasiswa</a>
+    </button>
     <table>
         <tr>
             <td>ID Mahasiswa</td>
@@ -47,6 +69,7 @@
             <td>Tempat lahir</td>
             <td>Tanggal Lahir</td>
             <td>Alamat</td>
+            <td colspan="2">Action</td>
         </tr>
         <?php
         include "koneksi.php";
@@ -62,11 +85,16 @@
             echo "<td>" . $mahasiswa['tempat_lahir'] . "</td>";
             echo "<td>" . $mahasiswa['tanggal_lahir'] . "</td>";
             echo "<td>" . $mahasiswa['alamat'] . "</td>";
+            echo "<td> <button><a href='edit_mahasiswa.php?id=" . $mahasiswa['id_mahasiswa'] . "'>Edit</a></button> </td>";
+            echo "<td> <button><a href='delete_mahasiswa.php?id=" . $mahasiswa['id_mahasiswa'] . "'>Delete</a></button> </td>";
             echo "</tr>";
         }
         ?>
     </table>
-     
+    <Table>
+
+    </Table>
+
 </body>
 
 </html>
